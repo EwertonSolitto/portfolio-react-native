@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
     gap: 12,
     marginInline: "auto",
     borderRadius: 24,
-    
   },
   text: {
     color: colors.primary,

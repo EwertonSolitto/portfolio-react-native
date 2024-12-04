@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, Text } from 'react-native';
+import { Linking, Pressable, Text } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 import { styles } from './CLinkButtonStyles';
@@ -7,7 +7,19 @@ import colors from '../../styles/colors';
 
 export default function CLinkButton({text, iconName}: {text: string, iconName: "github" | "whatsapp" | "linkedin"}) {
   function handleButton(link: string) {
-
+    switch(link) {
+      case "github": 
+        Linking.openURL('https://github.com/EwertonSolitto')
+        break
+      case "linkedin":
+        Linking.openURL('https://www.linkedin.com/in/ewerton-solitto/')
+        break
+      case "whatsapp":
+        Linking.openURL('https://api.whatsapp.com/send/?phone=5511990250440&text&type=phone_number&app_absent=0')
+        break
+      default:
+        throw new Error("Link undefined.");
+    }
   }
   
   return (
