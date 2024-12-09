@@ -7,12 +7,7 @@ export const styles = StyleSheet.create({
     paddingBlock: 32,
   },
   title: {
-    width: "50%",
-    textAlign: "center",
-    fontSize: 40,
-    fontWeight: 700,
-    color: colors.secondary,
-    marginBottom: 32,
+    marginBlock: 32,
     marginInline: "auto"
   },
   skillsContainer: {

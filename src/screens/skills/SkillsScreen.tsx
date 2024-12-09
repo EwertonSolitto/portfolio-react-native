@@ -6,15 +6,20 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
+import { CTitle } from '../../components/title/CTitle';
+
 import { styles } from './SkillsStyles';
 import colors from '../../styles/colors';
+
 
 export default function SkillsScreen() {
   return (
     <ScrollView style={styles.container}>
       <StatusBar backgroundColor={colors.primary} />
 
-      <Text style={styles.title}>My Skills</Text>
+      <View style={styles.title}>
+        <CTitle text="My Skills" />
+      </View>
       <View style={styles.skillsContainer}>
         
         <View style={styles.skill}>
