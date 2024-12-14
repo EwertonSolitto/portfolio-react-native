@@ -5,32 +5,27 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { styles } from './CLinkButtonStyles';
 import colors from '../../styles/colors';
 
-export default function CLinkButton({text, iconName}: {text: string, iconName: "github" | "whatsapp" | "linkedin"}) {
+export default function CLinkButton({
+  text, 
+  iconName, 
+  style, 
+  pressTransition = true, 
+  buttonColor, 
+  link
+}: TLinkButton) {
   function handleButton(link: string) {
-    switch(link) {
-      case "github": 
-        Linking.openURL('https://github.com/EwertonSolitto')
-        break
-      case "linkedin":
-        Linking.openURL('https://www.linkedin.com/in/ewerton-solitto/')
-        break
-      case "whatsapp":
-        Linking.openURL('https://api.whatsapp.com/send/?phone=5511990250440&text&type=phone_number&app_absent=0')
-        break
-      default:
-        throw new Error("Link undefined.");
-    }
+    Linking.openURL(link)
   }
   
   return (
     <Pressable style={({pressed}) => [
-        styles.container,
-        {backgroundColor: pressed ? colors.white : colors.secondary}
-      ]} 
-      onPress={() => handleButton(iconName)}
+      style ? style.container : styles.container,
+      pressTransition ? {backgroundColor: pressed ? colors.white : colors.secondary} : undefined
+    ]} 
+      onPress={() => handleButton(link)}
     >
-      <FontAwesome name={iconName} size={30} color={colors.primary} />
-      <Text style={styles.text}>{text}</Text>
+      <FontAwesome name={iconName} size={30} color={buttonColor} />
+      <Text style={style ? style.text : styles.text}>{text}</Text>
     </Pressable>
   );
 }
