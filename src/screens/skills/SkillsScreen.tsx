@@ -6,7 +6,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
-import { CTitle } from '../../components/title/CTitle';
+import CTitle from '../../components/title/CTitle';
 
 import { styles } from './SkillsStyles';
 import colors from '../../styles/colors';

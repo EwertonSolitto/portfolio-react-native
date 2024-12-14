@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import { styles } from './HomeStyles';
 
 import CLinkButton from '../../components/link-button/CLinkButton';
-import { CTitle } from '../../components/title/CTitle';
+import CTitle from '../../components/title/CTitle';
 
 import colors from '../../styles/colors';
 
