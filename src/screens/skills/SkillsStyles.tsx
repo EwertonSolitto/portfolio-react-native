@@ -33,11 +33,5 @@ export const styles = StyleSheet.create({
   skillText: {
     fontSize: 28,
     color: colors.secondary,
-  },
-  image: {
-    width: 32,
-    height: 32,
-    backgroundColor: colors.secondary,
-    borderRadius: 16
   }
 });
