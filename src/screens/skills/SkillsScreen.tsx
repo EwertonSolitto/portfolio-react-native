@@ -98,6 +98,11 @@ export default function SkillsScreen() {
           <Text style={styles.skillText}>Angular</Text>
         </View>
 
+        <View style={styles.skill}>
+          <CIcons icon='tailwind' size={32} />
+          <Text style={styles.skillText}>TailwindCSS</Text>
+        </View>
+
       </View>
     </ScrollView>
   );
