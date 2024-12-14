@@ -8,6 +8,7 @@ import SkillsScreen from '../screens/skills/SkillsScreen';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 import colors from '../styles/colors';
+import ProjectsScreen from '../screens/projects/ProjectsScreen';
 
 export default function Routes() {
   return (
@@ -46,6 +47,15 @@ export default function Routes() {
         options={{
           tabBarIcon: ({color, size}) => (
             <Ionicons name="build" size={size} color={color}/>
+          )
+        }}
+      />
+      <Screen 
+        name="Projects" 
+        component={ProjectsScreen} 
+        options={{
+          tabBarIcon: ({color, size}) => (
+            <Ionicons name="create" size={size} color={color}/>
           )
         }}
       />
