@@ -18,7 +18,8 @@ export const styles = StyleSheet.create({
   },
   tecnologiesContainer: {
     flexDirection: "row",
-    gap: 6
+    gap: 6,
+    flexWrap: "wrap"
   },
   tecnologyContainer: {
     backgroundColor: colors.primary,
@@ -37,11 +38,13 @@ export const styles = StyleSheet.create({
   },
   description: {
     fontSize: 16,
-    marginBlock: 8
+    marginBlock: 8,
+    textAlign: "justify"
   },
   buttonsList: {
     flexDirection: "row",
-    gap: 32
+    gap: 32,
+    justifyContent: "center"
   },
   buttonContainer: {
     backgroundColor: colors.primary,

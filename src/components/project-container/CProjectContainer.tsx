@@ -8,16 +8,17 @@ import colors from '../../styles/colors';
 import { CIcons } from '../icons/CIcons';
 
 type TProjectContainer = {
+  projectName: string,
   tecnologyList: {name: string, icon: string}[],
   description: string,
   githubLink: string,
   websiteLink?: string
 }
 
-export default function CProjectContainer({tecnologyList, description, githubLink, websiteLink}: TProjectContainer) {
+export default function CProjectContainer({projectName, tecnologyList, description, githubLink, websiteLink}: TProjectContainer) {
   return (
     <View style={styles.container}>
-        <Text style={styles.title}>The Blog</Text>
+        <Text style={styles.title}>{projectName}</Text>
 
         <View style={styles.tecnologiesContainer}>
           {
