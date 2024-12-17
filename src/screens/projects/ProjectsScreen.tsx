@@ -21,7 +21,7 @@ export default function ProjectsScreen() {
         <CProjectContainer
           projectName='Portfolio (web)'
           tecnologyList={[{icon: "nextjs", name: "Next.js"}, {icon: "sass", name: "Sass"}, {icon: "typescript", name: "Typescript"}]}
-          description="Portfolio is one of my most dedicated projects, in general, there is everything you need to know me."
+          description="Portfolio is one of my most dedicated projects, in general, there is everything you need to know about me."
           githubLink='https://github.com/EwertonSolitto/Portfolio'
           websiteLink='https://portfolio-ewertonsolitto.vercel.app/'
         />
