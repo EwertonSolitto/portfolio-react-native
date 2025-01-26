@@ -19,10 +19,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#0F1621"
-      }
+      },
+      "package": "com.ewertonsolitto.portfolioreactnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85672255-d139-4a16-b15e-96f8f3382f53"
+      }
     }
   }
 }
