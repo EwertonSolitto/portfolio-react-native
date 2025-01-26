@@ -12,10 +12,46 @@ type TProjectContainer = {
   tecnologyList: {name: string, icon: string}[],
   description: string,
   githubLink: string,
-  websiteLink?: string
+  websiteLink?: string,
+  downloadLink?: string
 }
 
-export default function CProjectContainer({projectName, tecnologyList, description, githubLink, websiteLink}: TProjectContainer) {
+export default function CProjectContainer({projectName, tecnologyList, description, githubLink, websiteLink, downloadLink}: TProjectContainer) {
+  function checkButtons() {
+    if(websiteLink) {
+      return (
+        <CLinkButton
+          text='Website' 
+          iconName='arrow-right'
+          link={websiteLink} 
+          style={{
+            container: [styles.buttonContainer, styles.websiteButton], 
+            text: styles.buttonText
+          }} 
+          pressTransition={false} 
+          buttonColor={colors.secondary}
+        />
+      )
+    } else if(downloadLink) {
+      return (
+        <CLinkButton
+          text='Download' 
+          iconName='arrow-down'
+          link={downloadLink} 
+          style={{
+            container: [styles.buttonContainer, styles.websiteButton], 
+            text: styles.buttonText
+          }} 
+          pressTransition={false} 
+          buttonColor={colors.secondary}
+        />
+      )
+    } 
+    return undefined
+  }
+
+
+
   return (
     <View style={styles.container}>
         <Text style={styles.title}>{projectName}</Text>
@@ -48,19 +84,8 @@ export default function CProjectContainer({projectName, tecnologyList, descripti
             buttonColor={colors.secondary}
           />
 
-          {websiteLink ?
-            <CLinkButton
-              text='Website' 
-              iconName='arrow-right'
-              link={websiteLink} 
-              style={{
-                container: [styles.buttonContainer, styles.websiteButton], 
-                text: styles.buttonText
-              }} 
-              pressTransition={false} 
-              buttonColor={colors.secondary}
-            /> : undefined
-          }
+          {checkButtons()}
+
         </View>
       </View>
   );

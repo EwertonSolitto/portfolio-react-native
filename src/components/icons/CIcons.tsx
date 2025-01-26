@@ -43,6 +43,8 @@ export function CIcons({icon, size}: {icon: string, size: number}) {
       return <FontAwesome5 name="angular" size={size} color="#dd1b16" />
     case "tailwind":
       return <Image source={require("../../../assets/tailwindcss.png")} style={[styles.image, styles.tailwind, iconSize]} />
+    case "api":
+      return <MaterialCommunityIcons name="api" size={size} color="white" />
     default: 
       throw new Error("Icon not found.")
   }

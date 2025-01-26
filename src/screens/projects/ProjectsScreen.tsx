@@ -78,6 +78,23 @@ export default function ProjectsScreen() {
           tecnologyList={[{icon: "react", name: "React Native"}, {icon: "typescript", name: "Typescript"}]}
           description="Spaceship Security is a React Native app that creates strong password."
           githubLink='https://github.com/EwertonSolitto/spaceship-security'
+          downloadLink='https://expo.dev/accounts/ewertonsolitto/projects/spaceship-security/builds/0651012c-4e9a-44f8-9f49-1ba43aa81bdc'
+        />
+
+        <CProjectContainer
+          projectName='Food Generator 🍕'
+          tecnologyList={[{icon: "react", name: "React Native"}, {icon: "typescript", name: "Typescript"}, {icon: "api", name: "API consuming"}]}
+          description="Food Generator is a React Native app that uses Foodish api to generate a food image with some options of food on the bottom tab."
+          githubLink='https://github.com/EwertonSolitto/food-generator'
+          downloadLink='https://expo.dev/accounts/ewertonsolitto/projects/food-generator/builds/e5a5be73-2f3e-4501-88f6-d62e21d6ab82'
+        />
+
+        <CProjectContainer
+          projectName='Camera Clone 📷'
+          tecnologyList={[{icon: "react", name: "React Native"}, {icon: "typescript", name: "Typescript"}]}
+          description="Camera Clone is a React Native app that works like a usual camera."
+          githubLink='https://github.com/EwertonSolitto/camera-clone'
+          downloadLink='https://expo.dev/artifacts/eas/swrN6RzQoLBsgSahaTHiqk.apk'
         />
       </View>
 
