@@ -4,6 +4,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 import { styles } from './CLinkButtonStyles';
 import colors from '../../styles/colors';
+import TLinkButton from './TLinkButton';
 
 export default function CLinkButton({
   text, 

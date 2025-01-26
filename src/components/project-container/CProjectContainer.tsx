@@ -6,15 +6,9 @@ import { styles } from './CProjectContainerStyles';
 import CLinkButton from '../link-button/CLinkButton';
 import colors from '../../styles/colors';
 import { CIcons } from '../icons/CIcons';
+import TProjectContainer from './TProjectContainer';
 
-type TProjectContainer = {
-  projectName: string,
-  tecnologyList: {name: string, icon: string}[],
-  description: string,
-  githubLink: string,
-  websiteLink?: string,
-  downloadLink?: string
-}
+
 
 export default function CProjectContainer({projectName, tecnologyList, description, githubLink, websiteLink, downloadLink}: TProjectContainer) {
   function checkButtons() {

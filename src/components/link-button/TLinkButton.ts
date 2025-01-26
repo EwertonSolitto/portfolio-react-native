@@ -9,3 +9,5 @@ type TLinkButton = {
   buttonColor: string,
   link: string
 }
+
+export default TLinkButton
