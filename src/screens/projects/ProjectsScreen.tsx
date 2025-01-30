@@ -86,7 +86,7 @@ export default function ProjectsScreen() {
           tecnologyList={[{icon: "react", name: "React Native"}, {icon: "typescript", name: "Typescript"}, {icon: "api", name: "API consuming"}]}
           description="Food Generator is a React Native app that uses Foodish api to generate a food image with some options of food on the bottom tab."
           githubLink='https://github.com/EwertonSolitto/food-generator'
-          downloadLink='https://expo.dev/accounts/ewertonsolitto/projects/food-generator/builds/e5a5be73-2f3e-4501-88f6-d62e21d6ab82'
+          downloadLink='https://expo.dev/accounts/ewertonsolitto/projects/food-generator/builds/912d1ba0-cd0f-492b-888d-f7e60e825680'
         />
 
         <CProjectContainer
@@ -94,7 +94,7 @@ export default function ProjectsScreen() {
           tecnologyList={[{icon: "react", name: "React Native"}, {icon: "typescript", name: "Typescript"}]}
           description="Camera Clone is a React Native app that works like a usual camera."
           githubLink='https://github.com/EwertonSolitto/camera-clone'
-          downloadLink='https://expo.dev/artifacts/eas/swrN6RzQoLBsgSahaTHiqk.apk'
+          downloadLink='https://expo.dev/accounts/ewertonsolitto/projects/camera-clone/builds/1a5b41cf-116a-4fea-8d4c-37aeb5ee8a9f'
         />
       </View>
 

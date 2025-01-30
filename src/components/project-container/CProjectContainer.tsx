@@ -4,9 +4,11 @@ import { Text, View } from 'react-native';
 import { styles } from './CProjectContainerStyles';
 
 import CLinkButton from '../link-button/CLinkButton';
-import colors from '../../styles/colors';
 import { CIcons } from '../icons/CIcons';
+
 import TProjectContainer from './TProjectContainer';
+
+import colors from '../../styles/colors';
 
 
 

@@ -1,16 +1,13 @@
 import React from 'react';
-import { Image, ScrollView, StatusBar, Text, View } from 'react-native';
-
-import Ionicons from '@expo/vector-icons/Ionicons';
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { ScrollView, StatusBar, Text, View } from 'react-native';
 
 import CTitle from '../../components/title/CTitle';
 
 import { styles } from './SkillsStyles';
-import colors from '../../styles/colors';
+
 import { CIcons } from '../../components/icons/CIcons';
+
+import colors from '../../styles/colors';
 
 
 export default function SkillsScreen() {
@@ -29,17 +26,17 @@ export default function SkillsScreen() {
         </View>
 
         <View style={styles.skill}>
-          <CIcons icon='html' size={32} />
+          <CIcons icon='css' size={32} />
           <Text style={styles.skillText}>CSS</Text>
         </View>
 
         <View style={styles.skill}>
-          <CIcons icon='css' size={32} />
+          <CIcons icon='javascript' size={32} />
           <Text style={styles.skillText}>Javascript</Text>
         </View>
 
         <View style={styles.skill}>
-          <CIcons icon='javascript' size={32} />
+          <CIcons icon='sass' size={32} />
           <Text style={styles.skillText}>Sass</Text>
         </View>
 

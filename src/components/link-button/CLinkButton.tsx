@@ -3,8 +3,10 @@ import { Linking, Pressable, Text } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 import { styles } from './CLinkButtonStyles';
-import colors from '../../styles/colors';
+
 import TLinkButton from './TLinkButton';
+
+import colors from '../../styles/colors';
 
 export default function CLinkButton({
   text, 
