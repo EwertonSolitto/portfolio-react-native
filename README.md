@@ -27,7 +27,7 @@
 
 # Download ⬇️
 
-ANDROID: https://expo.dev/accounts/ewertonsolitto/projects/portfolio-react-native/builds/1d95f876-345c-4c2d-a02b-2ff6fb11bd49
+ANDROID: https://expo.dev/accounts/ewertonsolitto/projects/portfolio-react-native/builds/009430ec-4eb5-44f9-8307-a105af713709
 
 # Installation 🔧
 
